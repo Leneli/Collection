@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Tour Backend</title>
+	<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>RR</h1>
+				<h2>Tour Backend interface</h2>
+			</div>
+			
+			<div class="filter well col-lg-12">
+				<div class="row">
+					<form class="form-inline" name="filter">
+						<div class="col-lg-7 col-md-8 col-sm-12">
+							<div class="form-group col-lg-4 col-md-4 col-sm-4">
+								<select class="form-control input-sm">
+								  <option value="" selected>Tour name</option>
+								  <option value="Beijing Express">Beijing Express</option>
+								  <option value="Classic">Classic</option>
+								  <option value="Classic Trans-Mongolian">Classic Trans-Mongolian</option>
+								  <option value="Classic Trans-Siberian">Classic Trans-Siberian</option>
+								  <option value="Premium">Premium</option>
+								  <option value="Real Eurasian">Real Eurasian</option>
+								  <option value="Siberian Eye">Siberian Eye</option>
+								  <option value="Superior">Superior</option>
+								  <option value="Three Capitals">Three Capitals</option>
+								  <option value="Trans-Mongolian Express">Trans-Mongolian Express</option>
+								  <option value="Trans-Siberian Express">Trans-Siberian Express</option>
+								  <option value="Vladivostok Voyager">Vladivostok Voyager</option>
+								</select>
+							</div>
+							<div class="form-group col-lg-4 col-md-4 col-sm-4">
+								<select class="form-control input-sm">
+								  <option value="" selected>Tour status</option>
+								  <option value="Fully booked">Fully booked</option>
+								  <option value="In progress">In progress</option>
+								  <option value="Not paid">Not paid</option>
+								  <option value="Trash">Trash</option>
+								  <option value="Cancelled">Cancelled</option>
+								</select>
+							</div>
+							<div class="form-group col-lg-4 col-md-4 col-sm-4">
+								<select class="form-control input-sm">
+								  <option value="" selected>Assignee</option>
+								  <option value="">Alla A.</option>
+								  <option value="">Natasha N.</option>
+								  <option value="">Dmitry D.</option>
+								</select>
+							</div>
+							
+							<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+								<div class="input-group">
+									<div class="input-group-addon input-sm"><span class="glyphicon glyphicon-search"></span></div>
+									<input type="text" class="form-control input-sm" placeholder="Serch">
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-offset-2 col-lg-3 col-md-4 col-sm-12 filter-dates">
+							<div class="col-lg-12 col-md-12 col-sm-6 form-group">
+								<label class="col-sm-3 control-label" for="date_with">with</label>
+								<input class="col-sm-9 form-control input-sm" type="date" id="date_with">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-6 form-group">
+								<label class="col-sm-3 control-label" for="date_to">to</label>
+								<input class="col-sm-9 form-control input-sm" type="date" id="date_to">
+							</div>
+						</div>
+					</form>					
+				</div>
+			</div>
+				
+			<div class="col-lg-12 table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>REF</th>
+							<th>Date created</th>
+							<th>Tour name</th>
+							<th>Tour dates</th>
+							<th>Tourist(s)</th>
+							<th>Assignee</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+						<tr>
+							<td>ABC-001</td>
+							<td>11.01.2016</td>
+							<td>Test Tour #1</td>
+							<td>11.02.2016-16.02.2016</td>
+							<td>John Doe, Vicky Woods, Mei Aoyama</td>
+							<td>Ivan Ivanov</td>
+							<td>
+								<a href="details.html" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+								<button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
